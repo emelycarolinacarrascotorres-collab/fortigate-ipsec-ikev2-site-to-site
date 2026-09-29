@@ -1,0 +1,37 @@
+ISP
+
+
+enable 
+config t
+no ip domain-lookup
+Hostname ISP-ALTICE
+Banner motd # Emely Carrasco 2025-0697 - El acceso no autorizado esta restringido #
+username admin privilege 15 secret cisco
+service password-encryption
+
+ip domain-name REDLOCA.COM
+crypto key generate rsa general-keys modulus 1024
+ip ssh version 2
+ip ssh time-out 60
+ip ssh authentication-retries 3
+
+line console 0
+exec-timeout 5 0
+transport input ssh
+logging synchronous
+
+line vty 0 4
+login local
+transport input ssh
+exec-timeout 5 0 
+logging synchronous
+
+interface gigabit 1/0
+Description FTG-A
+ ip address 20.25.6.1 255.255.255.252
+ no shutdown
+ 
+interface gigabit 2/0
+Description FTG-B
+ ip address 20.25.97.1 255.255.255.252
+ no shutdown

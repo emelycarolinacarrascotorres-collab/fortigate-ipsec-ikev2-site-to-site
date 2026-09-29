@@ -1,0 +1,17 @@
+
+SW1
+enable
+configure terminal
+vlan 10
+exit
+interface gigabit 0/1
+ switchport mode access
+ switchport access vlan 10
+ no shutdown
+ 
+interface gigabit 0/0
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport trunk allowed vlan 10
+ no shutdown
+end
