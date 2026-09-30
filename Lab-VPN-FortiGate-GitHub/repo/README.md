@@ -3,10 +3,7 @@
 > **Autora:** Emely Carrasco · **Matrícula:** 2025-0697
 
 ## 🎬 Video demostrativo
-
-> **[▶ Ver el video demostrativo aquí](REEMPLAZAR_CON_LINK_DEL_VIDEO)**
-> *(Sube el video a YouTube / Google Drive / OneDrive y pega el enlace arriba. Los videos pesados no deben subirse directamente a GitHub.)*
-
+(https://www.youtube.com/watch?v=2OKJWqRRx58)
 ---
 
 ## 📌 Propósito del laboratorio
